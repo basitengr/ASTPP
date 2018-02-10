@@ -25,8 +25,9 @@ Opensips Install guide for CentOS 6.0
  tar -zxvf opensips-1.7.1_src.tar.gz 
  cd /usr/src/opensips-1.7.1-tls 
  
- make include_modules="db_mysql" prefix="/" all 
- make include_modules="db_mysql" prefix="/" install
+ make include_modules="db_mysql cachedb_local” prefix="/" all
+ make include_modules="db_mysql cachedb_local" prefix="/" install
+
  
  
 **4. Add opensips user**
